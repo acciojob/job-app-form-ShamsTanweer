@@ -8,15 +8,13 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="">
+	<form action="" method="get">
 		<label for="input-name">Name :</label>
 		<input id="name"
 		   type="text"
 		   required 
-		   id="input-name"
-		   placeholder="Enter your name here"
-		   name="name"
-		>
+		   name="input-name"
+		   placeholder="Enter your name here">
 		<br> <br>
 
 		<label for="input-email">Email :</label>
@@ -56,15 +54,15 @@
 		<br> <br>
 
 		<label for="dob-input">D.O.B. :</label>
-		<input name="dob-input" id="dob" type="date">
+		<input required name="dob-input" id="dob" type="date">
 		<br> <br>
 
 		<label for="password-input">Password :</label>
-		<input name="password-input" id="password" type="password">
+		<input required name="password-input" id="password" type="password">
 		<br> <br>
 
 		<label for="portfolio-input">Portfolio Id :</label>
-		<input name="portfolio-input" type="url">
+		<input id="portfolio" name="portfolio-input" type="url">
 		<br> <br>
 
 		<button type="submit">Submit button</button>
