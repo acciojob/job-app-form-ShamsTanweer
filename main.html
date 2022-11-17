@@ -9,25 +9,27 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<form  method="post">
-		<label for="name">Name :</label>
-        <input id="name" name="name" required type="text">
-        <label  for="email">Email :</label>
-        <input id="email" name="email" required type="email">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter Email" name="email" required>
 
         <label for="gender">Gender :</label>
         <input type="radio" name="gender" value="Male"> Male
         <input type="radio" name="gender" value="Female"> Female
         <input type="radio" name="gender" value="Others"> Others
 
-        <label for="laptop-brands">Laptop Brands :</label>
-		<select name="laptop-brands" id="laptop">
-			<option value="Apple">Apple</option>
-			<option value="Asus">Asus</option>
-			<option value="HP">HP</option>
+        <label for="laptop">Laptop Brands :</label>
+		<select name="laptop" id="laptop">
+			<option name="laptop" value="Apple">BMW</option>
+			<option name="laptop" value="Asus">Audi</option>
+			<option name="laptop" value="HP">Mercedes</option>
 		</select>
 
         <label for="age">Age :</label>
-		<input id="age"
+		<input
+        id="age"
 		   type="number"
 		   required 
 		   placeholder="Enter your age here"
@@ -40,10 +42,7 @@
         <label for="password">Password :</label>
 		<input required name="password" id="password" type="password">
 
-        <label for="portfolio">Portfolio Id :</label>
-		<input id="portfolio" name="portfolio" type="url">
-
-        <button type="submit"></button>
+        <button type="submit">Submit</button>
 
 
 	</form>
