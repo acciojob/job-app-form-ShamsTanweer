@@ -9,63 +9,41 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<form  method="post">
-		<label for="input-name">Name :</label>
-		<input id="name"
-		   type="text"
-		   required 
-		   name="input-name"
-		   placeholder="Enter your name here">
-		<br> <br>
+		<label for="name">Name :</label>
+        <input id="name" name="name" required type="text">
+        <label id="email" for="email">Email :</label>
+        <input name="email" required type="email">
 
-		<label for="input-email">Email :</label>
-		<input id="email"
-		   type="text"  
-		   required 
-		   id="input-email"
-		   placeholder="Enter your mail here"
-           name="input-email"
-		>
-		<br> <br>
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Others"> Others
 
-		<label for="gender-input-">Gender :</label>
-		<input value="Male" type="radio" name="male" id="gender-input">
-		<label for="male">Male</label>
-		<input value="Female" type="radio" name="female" id="gender-input">
-		<label for="female">Female</label>
-		<input value="Others" type="radio" name="others" id="gender-input">
-		<label for="others">Others</label>
-		<br> <br>
-
-		<label for="laptop-brands">Brands :</label>
+        <label for="laptop-brands">Laptop Brands :</label>
 		<select name="laptop-brands" id="laptop">
 			<option value="Apple">Apple</option>
 			<option value="Asus">Asus</option>
 			<option value="HP">HP</option>
 		</select>
-		<br> <br>
 
-		<label for="age-input">Age :</label>
+        <label for="age">Age :</label>
 		<input id="age"
-		   type="text"
+		   type="number"
 		   required 
 		   placeholder="Enter your age here"
-		   name="age-input"
+		   name="age"
 		>
-		<br> <br>
 
-		<label for="dob-input">D.O.B. :</label>
-		<input required name="dob-input" id="dob" type="date">
-		<br> <br>
+        <label for="dateob">D.O.B. :</label>
+		<input required name="dateob" id="dob" type="date">
 
-		<label for="password-input">Password :</label>
+        <label for="password-input">Password :</label>
 		<input required name="password-input" id="password" type="password">
-		<br> <br>
 
-		<label for="portfolio-input">Portfolio Id :</label>
+        <label for="portfolio-input">Portfolio Id :</label>
 		<input id="portfolio" name="portfolio-input" type="url">
-		<br> <br>
 
-        <input type="submit" value="Submit">
+        <button type="submit"></button>
 
 
 	</form>
